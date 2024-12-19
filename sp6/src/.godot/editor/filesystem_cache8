@@ -1,0 +1,50 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1734634425
+Box.tscn::PackedScene::-1::1733891778::0::1::::<><>::
+button.blue.png::CompressedTexture2D::7041320112947050185::1734194771::1734631677::1::::<><>::
+button.red.png::CompressedTexture2D::3027040043199149836::1734194771::1734631677::1::::<><>::
+Camera.gd::GDScript::-1::1733896276::0::1::::<>Camera<>::
+CameraHolder.gd::GDScript::-1::1734632363::0::1::::<>Node3D<>::
+clap.wav::AudioStreamWAV::4108846128600524763::1734457363::1734631677::1::::<><>::
+default_env.tres::Environment::-1::1734560575::0::1::::<><>::
+dm12.texture.grass_resized.png::CompressedTexture2D::2647426303594180798::1734211422::1734634425::1::::<><>::
+export_presets.cfg::TextFile::-1::1734211950::0::1::::<><>::
+Floor.tscn::PackedScene::-1::1733881809::0::1::::<><>::
+halfpipe.tscn::PackedScene::-1::1733956590::0::1::::<><>::res://untitled.obj
+HopPad.gd::GDScript::-1::1734632870::0::1::::<>StaticBody3D<>::
+HopPad.tscn::PackedScene::-1::1734373161::0::1::::<><>::res://HopPad.gd
+HopPadProto.tscn::PackedScene::-1::1734560575::0::1::::<><>::res://sp6.hoppad.proto.01.obj
+icon.png::CompressedTexture2D::5176438631291503556::1733881147::1734631677::1::::<><>::
+joybase.png::CompressedTexture2D::8524712347894248556::1734194511::1734631677::1::::<><>::
+joystick.png::CompressedTexture2D::2124136126712650974::1734194511::1734631677::1::::<><>::
+Main.gd::GDScript::-1::1734632493::0::1::::<>Node3D<>::
+Main.tscn::PackedScene::2963316449775780811::1734634400::0::1::::<><>::res://Floor.tscn<>uid://b6j5p6mwch7k7::::res://Player.tscn<>res://CameraHolder.gd<>res://Box.tscn<>res://Main.gd<>res://halfpipe.tscn<>uid://bc003avh2mgfo::::res://Strument.tscn<>res://UI.tscn<>uid://bdyoyvo4bnjd3::::res://dm12.texture.grass_resized.png<>res://HopPadProto.tscn
+Player.gd::GDScript::-1::1734632193::0::1::::<>RigidBody3D<>::
+Player.tscn::PackedScene::4582704180714282252::1734634400::0::1::::<><>::res://Player.gd
+sp5.feature.test.01.obj::Mesh::591354755258450304::1734021155::1734631677::1::::<><>::
+sp5.feature.test.01.tscn::PackedScene::-1::1734035283::0::1::::<><>::res://sp5.feature.test.01.obj
+sp5.feature.test.02.obj::Mesh::1597174410484987178::1734022090::1734631677::1::::<><>::
+sp5.feature.test.02.tscn::PackedScene::-1::1734451282::0::1::::<><>::res://sp5.feature.test.01.obj
+sp6.hoppad.proto.01.obj::Mesh::8141006444910493132::1734554937::1734631677::1::::<><>::
+Strument.gd::GDScript::-1::1734634400::0::1::::<>RigidBody3D<>::
+Strument.tscn::PackedScene::2579975774664659456::1734634400::0::1::::<><>::res://Strument.gd
+UI.gd::GDScript::-1::1734631927::0::1::::<>Control<>::
+UI.tscn::PackedScene::-1::1734369625::0::1::::<><>::res://buttons/btn.down.blue.01.png<>res://buttons/btn.up.blue.01.png<>res://buttons/btn.left.white.01.png<>res://buttons/btn.hop.white.01.png<>res://UI.gd<>res://buttons/btn.right.white.01.png<>res://buttons/btn.hop.blue.01.png<>res://buttons/btn.down.white.01.png<>res://buttons/btn.left.blue.01.png<>res://buttons/btn.up.white.01.png<>res://buttons/btn.right.blue.01.png
+untitled.obj::Mesh::3106233930916749346::1733946122::1734631677::1::::<><>::
+zebra.stripe.jpg::CompressedTexture2D::7389716782340910797::1734112442::1734634425::1::::<><>::
+::res://buttons/::1734631677
+btn.down.blue.01.png::CompressedTexture2D::5855658611923758102::1734367947::1734631677::1::::<><>::
+btn.down.white.01.png::CompressedTexture2D::8380009331811788041::1734367947::1734631677::1::::<><>::
+btn.hop.blue.01.png::CompressedTexture2D::7027231479504546366::1734367947::1734631677::1::::<><>::
+btn.hop.white.01.png::CompressedTexture2D::1456679319384211142::1734367947::1734631677::1::::<><>::
+btn.left.blue.01.png::CompressedTexture2D::5791561618801230716::1734367947::1734631677::1::::<><>::
+btn.left.white.01.png::CompressedTexture2D::2846803824272066076::1734367947::1734631677::1::::<><>::
+btn.right.blue.01.png::CompressedTexture2D::2766804623627105949::1734367947::1734631677::1::::<><>::
+btn.right.white.01.png::CompressedTexture2D::3531779813099978239::1734367947::1734631677::1::::<><>::
+btn.up.blue.01.png::CompressedTexture2D::987244226116433246::1734367947::1734631677::1::::<><>::
+btn.up.white.01.png::CompressedTexture2D::5527619090027365163::1734367947::1734631677::1::::<><>::
+::res://buttons/originals/::1734631677
+Screenshot from 2024-12-16 08-40-35.png::CompressedTexture2D::664589081744554349::1734367947::1734631677::1::::<><>::
+Screenshot from 2024-12-16 08-40-53.png::CompressedTexture2D::7885851356855137374::1734367947::1734631677::1::::<><>::
+Screenshot from 2024-12-16 08-41-28.png::CompressedTexture2D::6287025102954125859::1734367947::1734631677::1::::<><>::
+Screenshot from 2024-12-16 08-41-37.png::CompressedTexture2D::591734040788241610::1734367947::1734631677::1::::<><>::

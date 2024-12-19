@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://w0xh17dvplvm"
+path="res://.godot/imported/sp5.feature.test.02.obj-c2ef0a07b6d2744284e6bca6a37f55c1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sp5.feature.test.02.obj-c2ef0a07b6d2744284e6bca6a37f55c1.mesh"]
+
+source_file="res://sp5.feature.test.02.obj"
+dest_files=["res://.godot/imported/sp5.feature.test.02.obj-c2ef0a07b6d2744284e6bca6a37f55c1.mesh", "res://.godot/imported/sp5.feature.test.02.obj-c2ef0a07b6d2744284e6bca6a37f55c1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

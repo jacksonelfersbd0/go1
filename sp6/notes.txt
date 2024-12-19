@@ -1,0 +1,101 @@
+Considering the delayed audio in the mobile browser there appears to be a work around with an audio, server, so we'll have to consider integrating that. While I really appreciate Godot, it wouldn't necessarily be the only game engine to utilize if it proves to be troublesome from the platforms we're hoping to aim for. Browser, and mobile, and possibly desktop, and other game consoles if it proves sustainable.
+__
+So as for, the game mechanics considering the interactions with the hop pads. Each hop pad would be it's own instrument and the player would be guided to hop on each pad, in a rythmn to the music they hear, until it's been extinguished, to then move on to the next one. So they would be implicitly playing with the tune. The main game logic, would then query each of the pads, to make sure that, they've met the number of hops they've specified, during the challenge.
+
+As for the user indication, the pads will glow, until they've met the hop pads quota. And they have to meet all of the hop pads requirements by the time the music over, adding a time element.
+
+#hoppads #mechanics
+__
+https://github.com/crystal-bit/godot-game-template/releases/tag/2022.08.0
+
+Our game template for handling menu and saving game state.
+__
+And essentially the main, feature the hop pad, will be used as part of dance challenges, and each hop pad will be assigned a different instrument. So you have to properly select your instrument.
+__
+I like the idea that, you can select different instruments you pickup along the way, and they can be used on different kinds of hop pads, either for opening doors or completing dance challenges. Starting off with a kick drum.
+
+#instrument #tools
+__
+For the characters of spirobeat, they'll be simple polygons, but with an animal pattern for their texture, to make it easier to see their orientation, including albahl. 
+__
+Triumph! We've built slightly better control onscreen buttons. We'll continue to perfect them as we go, but this will suffice for now. So I want to focus on building elements, that, of course dance to a rythm, we'll focus on "hop pads" and also integrating audio, if only a metronome to keep tempo. 
+__
+So for our first "beat" feature, we'll have a glowing square, that lights at the interval of a beat, and the user must hop on it, at the beat, or else they'll be transported back to the beginning. So essentially, these lighted beat pads will be a means that the user will attempt to get from point a to b, while dancing to the music.
+
+#puzzle #features
+__
+The "ab" series will be devoted to, the development of the mini games, to sort out the mechanics further, for the dance challenges or "dc" series. To eventually end up in the full game as Spirobeat or "sp" series. So that's we'll sort out our projects. But it will all fall under the brand of Albahl.
+__
+So aside from taking notes, we can of course sketch out, the map of the world and components roughly to get an idea of the general flow for the game. The UI elements however, work quite nicely and we'll build less obtrusive buttons, and inventory toggles.
+
+#design #ui #controlbuttons
+__
+Also, so, the idea of inventory, and being able to store, "instruments" which one can select for, then use on the jump is brilliant. Also being able to collect keys. Well and the combination of being able to use the instruments for making music, or rythmns, and also to have some utility, in providing the user access to new locations, and to take on new challenges.
+
+#inventory #instruments #mechanics
+__
+So in considering the "jump" element, I think what we'll develop for is, the ability to sustain a jump, or cut it short, such that you can then still use the jump for, well jumping, vs creating a beat. So holding the hop makes you bounce higher, tapping it, issues a little bop.
+
+#hop #mechanics
+__
+Albahl: Spirobeat
+__
+So for the UI control elements, we'll have a joystick toggle to the right, and a "hop" button to the left. And eventually a couple of arrows top right to select items.
+
+#controller
+__
+We could even make it a third person, and our dancers could be flames. ❤️
+__
+Maybe we could attempt to, recreate our first person controller, and test out, that of the multiplayer possibilities.
+__
+Rythmic games we shall build, and particuarly synchronized dancing around a map, to music of the user's choice. We could easily build a mobile, console and desktop version. Love it! ❤️
+__
+It's more so to ask, what skills, do I want to impart people with? What are we attempting to model exactly? 
+__
+I like the, random course generation idea as well. But specifically one where the ball is in free fall and you're directing into, hoops or checkpoints, all while everything is pulsing to a beat, would provide a particularly fun experience.
+
+As for the ethics of, developing "entertainment" apps. And what we'd be creating if, finance wasn't a concern. Well I don't know if, twin flame, could really offer anything truly original, if not only to piggyback off of, other titles to some degree, so maybe we're just, reskinning those games in a way. There are already, games that offer, a community aspect, such as stardew valley, but our model would be focused more on the Relokida lifestyle.
+
+And as for medical and surgical simulation, it feels, even further out of reach, but a purposeful, and meaningful endevaour nonetheless. And VR and haptic technologies are getting closer, to being affordable. Leaves one with a question of, will AI, then take over those domains, should I even dabble in something that feels to face obseletion.
+__
+So I actually enjoy flying the ball around, and making it go through hoops I think would be, more entertaining, checkpoints, and such that either your falling vertically or flying horizontally.
+
+And sort of basing this off of the more musical apps, like tile hope, you could have everything glow and bounce to music.
+__
+Yeah, it's kind of fun, pretty bland, but what can one expect from, a simple track?
+__
+What I'd suggest, is and 8 by 8 meter cube, with double door sized entry points, that are just outlines, rather than anything geometric. That way we can build "track sections, that will make there way to optionally any of these 8 interfacing ports.
+
+We can increase, our entry points with add centers, allowing for, even more options.
+
+#interfaces
+__
+We'll focus on building features of a set modular "size", like a certain square meters, and a default height, with standard entry points, such that they can be easily coupled together.
+
+Well I could see it coming in handy, in the future, when we want the course to be autogenerated.
+
+So in the code, we could define, the entry points, 4 at most for our square volume, such that, our algo, could, determine, where to place the next feature, how to couple it together properly.
+
+8 entry points at most.
+
+#standardization
+__
+If they fall from the edge, then, we'll place them back at the start.
+
+#failure
+__
+I could see a future game, thats, more as if, checkpoint racing, and that the featured obstacles are dynamically placed. I like things to be modular, to an extent, such that they can be fit together. To have clean interfaces, but to be whatever chaos they to be on the inside.
+
+#modularity
+__
+Well and the end of the course, will be to go through a gate, or an archway, that will end the game, perhaps put up a celebatory screen. "Yay!". Fireworks.
+
+#finale 
+__
+I want the start screen to be a "survey view" of all the obstacles, of the course itself. With a title like "Tap to Start" in Arcade color red.
+
+#introduction #begin
+__
+I guess we'll continue to think about course design then as a first priority. To build a series of components, that can then be, interconnected together.
+
+#course #design

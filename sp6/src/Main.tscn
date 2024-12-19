@@ -1,0 +1,73 @@
+[gd_scene load_steps=12 format=3 uid="uid://bihpnhwspsc5h"]
+
+[ext_resource type="PackedScene" path="res://Floor.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://b6j5p6mwch7k7" path="res://Player.tscn" id="2"]
+[ext_resource type="Script" path="res://CameraHolder.gd" id="3"]
+[ext_resource type="PackedScene" path="res://Box.tscn" id="4"]
+[ext_resource type="Script" path="res://Main.gd" id="5"]
+[ext_resource type="PackedScene" path="res://halfpipe.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://bc003avh2mgfo" path="res://Strument.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://UI.tscn" id="8"]
+[ext_resource type="Texture2D" uid="uid://bdyoyvo4bnjd3" path="res://dm12.texture.grass_resized.png" id="9"]
+[ext_resource type="PackedScene" path="res://HopPadProto.tscn" id="11"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_evke4"]
+albedo_texture = ExtResource("9")
+
+[node name="Main" type="Node3D"]
+script = ExtResource("5")
+
+[node name="Floor" parent="." instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.282283, -0.439336, 0.511783)
+material_override = SubResource("StandardMaterial3D_evke4")
+
+[node name="Spatial" parent="." instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.110444, 6.24944, 8.41373)
+
+[node name="CameraHolder" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.97863, 0)
+script = ExtResource("3")
+
+[node name="Camera" type="Camera3D" parent="CameraHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.67106)
+far = 300.0
+
+[node name="Player" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.04285, 0.980622, -0.50253)
+
+[node name="Spatial2" parent="." instance=ExtResource("6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9279, -16.6481, 40.5419)
+
+[node name="DirectionalLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.90329, 0.42903, 0, -0.42903, 0.90329, 0, 39.5715, 59.1881)
+light_indirect_energy = 0.407
+directional_shadow_max_distance = 124.9
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="UI" instance=ExtResource("8")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Strument" parent="." instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.02224, 0.224762, -0.426425)
+
+[node name="HopPadProto" parent="." instance=ExtResource("11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20832, -0.189332, -2.00208)
+
+[node name="HopPadProto2" parent="." instance=ExtResource("11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.22235, -0.18933, -0.254356)
+
+[node name="HopPadProto3" parent="." instance=ExtResource("11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.21585, -0.18933, 1.51158)
+
+[node name="HopPadProto4" parent="." instance=ExtResource("11")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.0912435, -0.189332, -2.02674)
+
+[node name="HopPadProto5" parent="." instance=ExtResource("11")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.186019, -0.18933, 0.721419)
+
+[node name="HopPadProto6" parent="." instance=ExtResource("11")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.0840178, -0.18933, 3.44981)
