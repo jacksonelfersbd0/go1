@@ -39,9 +39,8 @@ func _ready():
 	ray_cast_left.target_position = Vector3(-0.5, 0, 0)   # Left
 	ray_cast_right.target_position = Vector3(0.5, 0, 0)   # Right
 
-	# Connect UI signals
+	# Connect UI signals (if applicable)
 	UIManager.move_vector_updated.connect(_on_move_vector_updated)
-	UIManager.jump_pressed.connect(_on_jump_pressed)
 
 	# Make sure the mouse is visible and part of the game by default
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -50,12 +49,6 @@ func _ready():
 func _on_move_vector_updated(move_vector):
 	# Update the move vector based on UI joystick input
 	mobile_move_vector = move_vector
-
-func _on_jump_pressed():
-	print("jump pressed")
-	# Jump action triggered by UI button press
-	if ray_cast_down.is_colliding() or ray_cast_front.is_colliding() or ray_cast_back.is_colliding() or ray_cast_left.is_colliding() or ray_cast_right.is_colliding() or ray_cast_up.is_colliding():
-		apply_central_force(Vector3(0, jump_strength, 0))
 
 func _process(delta):
 	# Get the camera's forward and right direction
@@ -93,8 +86,8 @@ func _process(delta):
 		var torque = move_dir.cross(Vector3(0, 1, 0)) * rotation_factor
 		apply_torque(torque)
 
-	# Jump if the player presses the jump key and RayCasts detect the ground
-	if Input.is_action_just_pressed("ui_accept") and (ray_cast_down.is_colliding() or 
+	# Jump if the player presses the left mouse button and RayCasts detect the ground
+	if Input.is_mouse_button_pressed(1) and (ray_cast_down.is_colliding() or 
 		ray_cast_front.is_colliding() or ray_cast_back.is_colliding() or 
 		ray_cast_left.is_colliding() or ray_cast_right.is_colliding() or 
 		ray_cast_up.is_colliding()):
